@@ -1,0 +1,150 @@
+.banner-graph {
+  background-color: #c9ddaa;
+  padding-bottom: 1%;
+}
+.banner-grid {
+  display: grid;
+  grid-template-columns: 15% 45% 40%;
+  grid-template-areas: ". search-bar-area search-img";
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 200px;
+}
+
+.funds-area {
+  margin: 0 10%;
+}
+.first-fund {
+  padding-top: 0.5%;
+}
+.funds-area h3 {
+  font-size: 20px;
+  padding-top: 1%;
+  margin-bottom: 0;
+}
+.funds-area p {
+  margin-top: 0;
+}
+.fund-area {
+  margin-bottom: 3%;
+}
+.color-item {
+  width: 10px;
+  padding: 0;
+  margin: 0 0 0 50px;
+}
+
+.graphs-container {
+  margin: 1% 0;
+}
+.graphs-area {
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: #f4f4f3;
+  width: 100%;
+}
+.first-graph-area {
+  padding-top: 1%;
+  margin: 0 5%;
+  background-color: white;
+  border: 2px solid #6C9229;
+}
+.graph-title {
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+.first-graph {
+  border: 2px solid grey;
+  margin: 0 1% 1% 1%;
+  padding-left: calc((100% - 1140px) / 2);
+}
+
+.rentability-area {
+  padding-top: 1%;
+  margin: 2% 5%;
+  background-color: white;
+  border: 2px solid #6C9229;
+}
+.rentability-per-period {
+  border: 2px solid grey;
+  margin: 0 1% 1% 1%;
+}
+.fund-abreviation {
+  margin-left: 0;
+}
+.color-item-tabela {
+  margin: 0 0 0 20px;
+  padding: 10px 0;
+  width: 8px;
+  float: left;
+}
+
+
+.graphs-grid-area {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 5%;
+  grid-row-gap: 3%;
+  margin: 0 5%;
+  padding-bottom: 2.5%;
+}
+.grid-graph-area {
+  padding-top: 2%;
+  margin: 0;
+  background-color: white;
+  border: 2px solid #6C9229;
+}
+.grid-graph {
+  border: 2px solid grey;
+  margin: 0 2% 2% 2%;
+  padding-left: calc((100% - 561px)/2);
+}
+
+
+/* Media Queries
+-------------------------*/
+
+/*----- Ultrawide -----*/
+
+@media only screen and (min-width: 2560px) {
+
+  .graphs-grid-area {
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+  }
+}
+
+/*----- Netbook -----*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .graphs-grid-area {
+    grid-template-columns: 49% 49%;
+    grid-column-gap: 2%;
+  }
+}
+
+/*----- Tablet -----*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .graphs-grid-area {
+    grid-template-columns: 100%;
+    grid-row-gap: 1%;
+
+  }
+    .rentability-area-matrix {
+    padding-top: 1%;
+    margin: 7.5% 5% 5% 5%;
+    background-color: white;
+    border: 2px solid #6C9229;
+  }
+  .grid-graph {
+    border: 2px solid grey;
+    margin: 0 1% 1% 1%;
+  }
+
+}
