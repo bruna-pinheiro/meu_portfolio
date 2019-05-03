@@ -1,0 +1,637 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+h1 {
+  font-size: 210%;
+  color: #5B8414;
+  font-family: 'Comfortaa', cursive;
+}
+a:hover {
+  color: #5B8414;
+}
+
+/*----- Navigation Bar -----*/
+
+nav {
+  height: 70px;
+  text-align: right;
+  background: #F4F4F3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #222815;
+}
+nav a {
+  display: inline-block;
+  padding-top: 30px;
+  margin-right: 50px;
+  text-decoration: none;
+  text-align: right;
+  font-weight: 600;
+  color: #222815;
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
+}
+nav a:hover {
+  color: #5B8414;
+}
+.img-logo-nav {
+  width: 160px;
+}
+#logo-nav {
+  float: left;
+  padding-top: 10px;
+  padding-left: 110px;
+}
+.group {
+  padding-right: 80px;
+}
+.dropdown {
+  display: none;
+}
+
+/*----- Container -----*/
+
+.simple-container {
+  align-content: center;
+}
+
+/*----- Home -----*/
+
+header h1{
+  color: #222815;
+  margin-bottom: 1%;
+  padding-top: 0;
+  padding-bottom: 2%;
+  line-height: normal;
+  font-size: 280%;
+  font-family: 'Comfortaa', cursive;
+}
+.home {
+  background: linear-gradient(rgba(238, 238, 238, 0.3), rgba(238, 238, 238, 0.3)), url("../imagens/img-header.jpg") no-repeat scroll;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.content-wrap {
+  padding: 12% 10% 12% 10%;
+  overflow: auto;
+  line-height: 125%;
+  text-align: center;
+}
+.cont-title {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: 10%;
+  padding-bottom: 0;
+  overflow: auto;
+  font-family: 'Comfortaa', cursive;
+  background-color: #EEEEEE;
+  background: linear-gradient(rgba(238, 238, 238, 0.6), rgba(238, 238, 238, 0.6));
+}
+.cont-subtitle {
+  color: #222815;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 8%;
+  padding-left: 6%;
+  padding-right: 6%;
+  overflow: auto;
+  font-size: 120%;
+  background: linear-gradient(rgba(238, 238, 238, 0.6), rgba(238, 238, 238, 0.6));
+  font-family: 'Muli', sans-serif;
+}
+.subtitle {
+  line-height: 35px;
+  font-weight: 400;
+}
+.btn-conheca {
+  text-decoration: none;
+  background: #5B8414;
+  color: white;
+  margin-top: 3%;
+  padding: 1.5% 3%;
+  display: inline-block;
+  font-size: 130%;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: 'Comfortaa', cursive;
+}
+.btn-conheca:hover {
+  background-color: #4B6C10;
+  color: white;
+}
+
+/*----- Benefícios 1 -----*/
+
+.benefits {
+  text-align: center;
+  background: white;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  margin: 0 20px 0 20px;
+}
+.benefits h1 {
+}
+.benefits p {
+  display: inline-block;
+  padding: 0 30%;
+  text-align: center;
+  font-size: 125%;
+  color: #222815;
+  font-weight: 250;
+  font-family: 'Muli', sans-serif;
+  line-height: 150%;
+}
+
+/*----- Benefícios 2 -----*/
+
+.benefits2 {
+  background-color: #F4F4F3;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  color: #222815;
+}
+.benefits2 h2 {
+  font-size: 180%;
+  color: #222815;
+  font-family: 'Comfortaa', cursive;
+}
+.benefits2 p {
+  font-size: 120%;
+  line-height: 150%;
+  color: #222815;
+  padding-bottom: 7%;
+  font-family: 'Muli', sans-serif;
+}
+.content-wrap-b {
+  margin: 5% 11% 5% 11%;
+}
+.list {
+  display: grid;
+  grid-template-columns: 18% 78%;
+}
+
+/*-----Contato-----*/
+
+#contact h1 {
+  text-align: center;
+  padding-bottom: 6%;
+  padding-top: 5%;
+}
+.logo-contact {
+  max-width: 50%;
+  margin-top: 16%;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  margin: 0 6% 6% 6%;
+}
+.left {
+  text-align: center;
+  background-size: 50%;
+  font-family: 'Muli', sans-serif;
+}
+.left p {
+  font-size: 120%;
+  line-height: 150%;
+  padding: 5%;
+  padding-top: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+  outline: none;
+}
+/*input[type=text], select, textarea :focus {
+  border-color: #5B8414;
+}*/
+.form-simple-container {
+  border-radius: 5px;
+  background-color: #F4F4F3;
+  padding: 5%;
+  margin-left: 5%;
+  margin-right: 7%;
+}
+.inline-block {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.grid-label {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  font-family: 'Muli', sans-serif;
+}
+.grid-input {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+.name {
+  padding: 2%;
+}
+.phone {
+  width: 90% !important;
+  margin-left: 10%;
+}
+.email {
+  font-family: 'Muli', sans-serif;
+}
+.message {
+  font-family: 'Muli', sans-serif;
+}
+#message {
+  height: 200px;
+}
+.btn-enviar {
+  text-decoration: none;
+  background: #5B8414;
+  color: white;
+  margin-top: 3%;
+  padding: 1.5% 3%;
+  font-size: 120%;
+  font-weight: 600;
+  border-radius: 7px;
+  font-family: 'Muli', sans-serif;
+  float: right;
+}
+.btn-enviar:hover {
+  background-color: #4B6C10;
+  color: white;
+}
+.logo-mobile {
+  display: none;
+  max-width: 50%;
+}
+
+/*----- Footer -----*/
+
+.footer {
+  background-color: #F4F4F3;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+.footer a {
+  text-align: center;
+  font-size: 300%;
+  padding-top: 2%;
+  color: #222815;
+}
+
+/*----- Copyright -----*/
+
+.copyright {
+  text-align: center;
+  padding-top: 2%;
+}
+
+/* Media Queries
+-------------------------*/
+
+/*----- Ultrawide -----*/
+
+@media only screen and (min-width: 2560px) {
+  nav {
+    margin: 0 25%;
+  }
+  .simple-container {
+    margin: 0 25%;
+  }
+  .benefits {
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+  }
+}
+
+/*----- Netbook -----*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  nav {
+    height: 60px;
+  }
+  nav a {
+    padding-top: 25px;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  .img-logo-nav {
+    width: 130px;
+  }
+  #logo-nav {
+    float: left;
+    padding-top: 8px;
+    padding-left: 60px;
+  }
+  .group {
+    padding-right: 60px;
+  }
+
+  header h1 {
+    font-size: 200%;
+  }
+  .subtitle {
+    font-size: 100%;
+  }
+  .btn-conheca {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+  .benefits p {
+    font-size: 120%;
+    padding: 0 15%;
+  }
+
+  .img-benef-1 {
+    width: 75%;
+    margin-top: 15%;
+  }
+  .benefits2 h2 {
+    font-size: 150%;
+  }
+  .benefits2 p {
+    font-size: 110%;
+    line-height: 120%;
+  }
+
+  .left p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .footer a {
+    font-size: 200%;
+  }
+
+  .copyright {
+    font-size: 80%;
+  }
+}
+
+/*----- Tablet -----*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  nav {
+    height: 60px;
+  }
+  nav a {
+    padding-top: 25px;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  .img-logo-nav {
+    width: 130px;
+  }
+  #logo-nav {
+    padding-top: 8px;
+    padding-left: 60px;
+  }
+  .group {
+    padding-right: 60px;
+  }
+
+  header h1 {
+    font-size: 200%;
+  }
+  .subtitle {
+    font-size: 100%;
+  }
+  .btn-conheca {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+  .benefits p {
+    font-size: 110%;
+    padding: 0 15%;
+  }
+
+  .content-wrap-b {
+    margin: 5% 7% 5% 7%;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 22% 77%;
+  }
+
+  .img-benef-1 {
+    width: 65%;
+    margin-top: 22%;
+  }
+  .benefits2 h2 {
+    font-size: 150%;
+  }
+  .benefits2 p {
+    font-size: 100%;
+    line-height: 120%;
+  }
+
+  .left p {
+    font-size: 110%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #message {
+    height: 100px;
+  }
+  .btn-enviar {
+    margin-top: 3%;
+    padding: 1.5% 3%;
+    font-size: 90%;
+    border-radius: 4px;
+  }
+
+  .footer a {
+    font-size: 150%;
+  }
+
+  .copyright {
+    font-size: 60%;
+  }
+}
+
+/*----- Smartphones -----*/
+
+@media only screen and (max-width: 767px) {
+  nav {
+    height: 50px;
+  }
+  nav a {
+    margin-right: 0;
+  }
+  .img-logo-nav {
+    width: 110px;
+  }
+  #logo-nav {
+    padding-top: 8px;
+    padding-left: 30px;
+  }
+  .group {
+    display: none;
+  }
+  .dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  .dropdown-content a {
+    color: black;
+    font-size: 12px;
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd
+  }
+  .show {
+    display:block;
+  }
+
+  .content-wrap {
+    padding: 20% 8% 9% 8%;
+  }
+  h1 {
+    font-size: 90%;
+  }
+  .subtitle {
+    line-height: 120%;
+  }
+
+  header h1 {
+    font-size: 110%;
+    line-height: 125%;
+    margin-top: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 150%;
+  }
+  header h2 {
+    font-size: 70%;
+    line-height: 25px;
+  }
+  .btn-conheca {
+    margin-top: 0;
+    padding: 0.5% 2.3%;
+    font-size: 40%;
+    font-weight: 550;
+    border-radius: 3px;
+  }
+
+  .benefits p {
+    font-size: 80%;
+    padding: 0 8%;
+  }
+  .list {
+    grid-template-columns: 100%;
+  }
+  .img-benef-1 {
+    max-width: 27%;
+    margin: 10% 5% 5% 35%;
+    align-content: center;
+  }
+
+  .benefits2 h2 {
+    font-size: 90%;
+  }
+  .benefits2 p {
+    font-size: 75%;
+  }
+
+  #contact h1 {
+    margin: 5% 15% 0 15%;
+  }
+
+  .left p {
+    font-size: 75%;
+    line-height: 150%;
+    padding: 5%;
+    padding-top: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  label {
+    font-size: 75%;
+  }
+  input[type=text], select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 14px;
+    resize: vertical;
+  }
+  #message {
+    height: 100px;
+  }
+  .btn-enviar {
+    margin-top: 0;
+    padding: 1.5% 3.5%;
+    font-size: 80%;
+    font-weight: 550;
+    border-radius: 5px;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+  }
+  .form-container {
+    border-radius: 0;
+    background-color: #F4F4F3;
+    padding: 5%;
+    margin: 0;
+  }
+  .logo-contact {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+    width: 40%;
+    margin: 8% 30%;
+  }
+  .footer a {
+    font-size: 150%;
+  }
+  .copyright p {
+    font-size: 50%;
+  }
+}
