@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="container">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfolio | Comparativo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Muli:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style/home.css">
+  <link rel="stylesheet" href="style/comparative.css">
+  <link rel="stylesheet" href="style/graph.css">
+  <link rel="stylesheet" href="style/fund_detail.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <a id="logo-nav" href="#home"><img src="images/logo.png" class="img-logo-nav"></a>
+    <div class="group">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#blog">Blog</a>
+    </div>
+    <div class="dropdown">
+      <i class="fas fa-bars dropbtn" onclick="myFunction()"></i>
+      <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#blog">Blog</a>
+      </div>
+    </div>
+  </nav>
+  <div class="simple-container">
+    <div class="locations">
+      <a href="" class="location-link"><i class="fas fa-home"></i></a>>
+      <a href="" class="location-link">Início</a>
+    </div>
+    <div class="banner">
+      <div class="search-area">
+        <img src="images/search_img.png" alt="" class="search-img-mobile">
+        <p class="banner-title">Faça seus comparativos e analise <br> as melhores opções</p>
+        <div class="search-bar-area">
+          <form method="get" action="">
+            <input type="text" placeholder="Insira nome ou CNPJ do fundo" class="search-bar">
+            <button type="submit"><i class="fa fa-search search-icon"></i></button>
+          </form>
+        </div>
+      </div>
+      <img src="images/search_img.png" alt="" class="search-img">
+    </div>
+    <div class="content-comp">
+      <h1>Comparador de Fundos de Investimento</h1>
+      <p class="paragraph1">Em um mercado que possui mais de 15 mil fundos em atividade, ferramentas que podem lhe auxiliar se seus investimentos estão no caminho certo ou se está na hora de rever algo se tornam necessárias. O time do meuportfol.io preparou a mais completa ferramenta do mercado demonstrando diversos tipos de retornos e analises de risco de acordo com as premissas do mercado.</p>
+      <p class="paragraph2">Se você ainda está iniciando na área ou não está confortável em utilizar a nossa ferramenta então lhe sugerimos o nosso<span> tutorial completo</span>.</p>
+    </div>
+    <div class="hint">
+      <h1 class="question">Em dúvida de quais fundos escolher?</h1>
+      <p class="intro">Você pode iniciar acessando o nosso link de <a href="" class="">melhores fundos</a> por classe e período, <a href="index.html#contact" class="">falar conosco</a> ou utilizar algumas das sugestões abaixo:</p>
+      <div class="founds-options">
+        <div class="option">
+          <h1>Renda Fixa</h1>
+          <p>FUNDO RANDOM X</p>
+          <p>FUNDO RANDOM Y</p>
+          <p>FUNDO RANDOM X</p>
+        </div>
+        <div class="option">
+          <h1>Multimercado</h1>
+          <p>FUNDO RANDOM X</p>
+          <p>FUNDO RANDOM Y</p>
+          <p>FUNDO RANDOM X</p>
+        </div>
+        <div class="option">
+          <h1>Cambial</h1>
+          <p>FUNDO RANDOM X</p>
+          <p>FUNDO RANDOM Y</p>
+          <p>FUNDO RANDOM X</p>
+        </div>
+        <div class="option">
+          <h1>Ações</h1>
+          <p>FUNDO RANDOM X</p>
+          <p>FUNDO RANDOM Y</p>
+          <p>FUNDO RANDOM X</p>
+        </div>
+      </div>
+    </div>
+      <hr>
+      <div class="final-box">
+        <div class="send-email">
+          <p class="send-email-title">Para ficar sempre por dentro das novidades do mercado e receber dicas, deixe seu email!</p>
+          <div class="send-email-form-area">
+            <form method="get" action="">
+               <input type="text" placeholder="Insira seu email" required class="insert-email">
+               <a href="" class="btn-send-email">Enviar</a>
+            </form>
+          </div>
+          <div class="bottom-line">
+            <p>*Não é spam! Nós também não gostamos deles.</p>
+         </div>
+        </div>
+        <div class="visit">
+          <p>Visite nossa rede</p>
+          <a href=""><i class="fab fa-linkedin-in in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-comparative">
+        <img src="images/logo.png" alt="" class="footer-comp-logo">
+        <p class="copyright-comp">® MeuPortfolio / Todos os direitos reservados</p>
+      </div>
+      <div>
+        <p class="bottom-info">As informações disponibilizadas na ferramenta de fundos do MeuPortfolio não configuram um relatório de análise ou qualquer tipo de recomendação e foram obtidas a partir de fontes públicas como a CVM. Rentabilidade passada não representa garantia de resultados futuros e apesar do cuidado na coleta e manuseio das informações, elas não foram conferidas individualmente. As informações são enviadas pelos próprios gestores aos órgãos reguladores e podem haver divergências pontuais e atraso em determinadas atualizações. O MeuPortfolio, seus sócios, administradores, representantes legais e funcionários não garantem sua exatidão, atualização, precisão, adequação, integridade ou veracidade, tampouco se responsabilizam pela publicação acidental de dados incorretos. É proibida a reprodução total ou parcial de textos, fotos, ilustrações ou qualquer outro conteúdo deste site por qualquer meio sem a prévia autorização de seu autor/criador ou do administrador, conforme LEI Nº 9.610, de 19 de fevereiro de 1998. Qualquer dúvida, questionamento entre em contato através da sessão Contato.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
