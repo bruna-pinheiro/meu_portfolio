@@ -9,6 +9,7 @@ h1 {
 }
 a:hover {
   color: #5B8414;
+  text-decoration: none;
 }
 
 /*----- Navigation Bar -----*/
@@ -39,6 +40,7 @@ nav a {
 }
 nav a:hover {
   color: #5B8414;
+  text-decoration: none;
 }
 .img-logo-nav {
   width: 160px;
@@ -206,7 +208,6 @@ header h1{
   margin-left: 15%;
   margin-right: 15%;
 }
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -218,9 +219,6 @@ input[type=text], select, textarea {
   resize: vertical
   outline: none;
 }
-/*input[type=text], select, textarea :focus {
-  border-color: #5B8414;
-}*/
 .form-simple-container {
   border-radius: 5px;
   background-color: #F4F4F3;
@@ -273,6 +271,10 @@ input[type=text], select, textarea {
   background-color: #4B6C10;
   color: white;
 }
+.ok-btn {
+  background: #5B8414;
+  color: white;
+}
 .logo-mobile {
   display: none;
   max-width: 50%;
@@ -306,7 +308,7 @@ input[type=text], select, textarea {
 
 /*----- Ultrawide -----*/
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2400px) {
   nav {
     margin: 0 25%;
   }
@@ -316,6 +318,9 @@ input[type=text], select, textarea {
   .benefits {
     padding-top: 2%;
     padding-bottom: 2.5%;
+  }
+  .benefits2 p {
+    margin-left: 2%;
   }
 }
 

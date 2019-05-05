@@ -4,12 +4,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfolio | Detalhamento de fundos</title>
+  <title>Meu Portfolio | Comparação de Fundos</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Muli:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="style/comparative.css">
   <link rel="stylesheet" href="style/graph.css">
-  <link rel="stylesheet" href="style/fund_detail.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -38,128 +37,148 @@
       <a href="" class="location-link">Início</a>
     </div>
     <div class="banner-graph">
-      <div class="banner-detail-area">
-        <a href="graphs.html" class="btn-back-to-graphs">Voltar para Comparação</a>
-        <hr>
-      </div>
-
-        <div class="fund-detail-area">
-          <p class="graph-title">Detalhes do Fundo</p>
-          <div class="rentability-per-period">
-
-            <h2 class="fund-title">FIDUC FUNDO DE INVESTIMENTO EM AÇÕES</h2>
-
-            <div _ngcontent-c33="" class="container" style="visibility: visible;">
-              <br _ngcontent-c33="">
-              <div _ngcontent-c33="" class="row detalheFundoDesktop">
-                <div _ngcontent-c33="" class="col-12">
-                  <div _ngcontent-c33="" class="table-responsive">
-                    <table _ngcontent-c33="" class="table">
-                      <tbody _ngcontent-c33="">
-                        <tr _ngcontent-c33="" class="thead">
-                          <th _ngcontent-c33="" scope="row">CNPJ</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col">22.150.587/0001-58</td>
-                          <th _ngcontent-c33="" class="texts" scope="row">Administrador</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col"> CFO ADMINISTRACAO DE RECURSOS LTDA </td>
-                        </tr>
-                        <tr _ngcontent-c33="">
-                          <th _ngcontent-c33="" scope="row">Patrimônio</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col"> R$&nbsp;8.824.531,21 </td>
-                          <th _ngcontent-c33="" class="texts" scope="row">Benchmark</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col">OUTROS</td>
-                        </tr>
-                        <tr _ngcontent-c33="">
-                          <th _ngcontent-c33="" class="texts" scope="row">Gestor</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col">CFO ADMINISTRACAO DE RECURSOS LTDA</td>
-                          <th _ngcontent-c33="" class="texts" scope="row">Data inicial</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col"> 21/02/2018 </td>
-                        </tr>
-                        <tr _ngcontent-c33="">
-                          <th _ngcontent-c33="" class="texts" scope="row">Classe</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col">Ações</td>
-                          <th _ngcontent-c33="" class="texts" scope="row">Cotistas</th>
-                          <td _ngcontent-c33="" class="text-left" scope="col">162</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+      <div class="banner-grid">
+        <div class="search-area">
+          <img src="imagens/search_img.png" alt="" class="search-img-mobile">
+          <p class="banner-title">Faça seus comparativos e analise <br> as melhores opções</p>
+          <div class="search-bar-area">
+            <form method="get" action="">
+              <input type="text" placeholder="Insira nome ou CNPJ do fundo" class="search-bar">
+              <button type="submit"><i class="fa fa-search search-icon"></i></button>
+            </form>
           </div>
         </div>
-
+        <img src="imagens/search_img.png" alt="" class="search-img">
+      </div>
+      <hr>
+      <div class="funds-area">
+        <ul _ngcontent-c13="" class="list-group collapse show rounded">
+          <div class="fund-area">
+            <li _ngcontent-c13="" appefeitoquandoapontacommouseadicionasombra="" class="list-group-item row justify-content-between flex-wrap align-items-center fundos" style="box-shadow: rgb(0, 0, 51) 2px 2px 4px;">
+              <div _ngcontent-c13="" class="row espacadorRow">
+                <span _ngcontent-c13="" class="color-item" id="fundo-color" style="background-color: rgb(152, 251, 152);"></span>
+                <span _ngcontent-c13="" class="col-10 espacadorSpan">
+                  <div _ngcontent-c13="" class="row">
+                    <div _ngcontent-c13="" class="d-flex align-items-center justify-content-between col-12">
+                      <td _ngcontent-c13="" class="btn text-left col">
+                        <div class="funds-info first-fund">
+                          <h3 _ngcontent-c13="">FIDUC FUNDO DE INVESTIMENTO EM AÇÕES</h3>
+                          <br _ngcontent-c13="">
+                          <p _ngcontent-c13="">22.150.587/0001-58</p>
+                        </div>
+                      </td>
+                    </div>
+                  </div>
+                </span>
+                <button _ngcontent-c13="" aria-label="botao fechar" class="close" type="button">
+                  <span _ngcontent-c13="" aria-hidden="true">×</span>
+                </button>
+              </div>
+            </li>
+          </div>
+          <div class="fund-area">
+            <li _ngcontent-c13="" appefeitoquandoapontacommouseadicionasombra="" class="list-group-item row justify-content-between flex-wrap align-items-center fundos" style="box-shadow: rgb(0, 0, 51) 2px 2px 4px;">
+              <div _ngcontent-c13="" class="row espacadorRow">
+                <span _ngcontent-c13="" class="color-item" id="fundo-color" style="background-color: rgb(0, 255, 255);"></span>
+                <span _ngcontent-c13="" class="col-10 espacadorSpan">
+                  <div _ngcontent-c13="" class="row">
+                    <div _ngcontent-c13="" class="d-flex align-items-center justify-content-between col-12">
+                      <td _ngcontent-c13="" class="btn text-left col">
+                        <div class="funds-info">
+                          <h3 _ngcontent-c13="">FIDUC FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO MULTIMERCADO CREDITO PRIVADO</h3><br _ngcontent-c13="">
+                          <p _ngcontent-c13="">24.413.868/0001-81</p>
+                        </div>
+                      </td>
+                    </div>
+                  </div>
+                </span>
+                <button _ngcontent-c13="" aria-label="botao fechar" class="close" type="button">
+                  <span _ngcontent-c13="" aria-hidden="true">×</span>
+                </button>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
     </div>
     <div class="graphs-container">
       <div class="graphs-area">
         <div class="first-graph-area">
           <p class="graph-title">Rentabilidade Acumulada</p>
           <div class="first-graph">
-            <img src="imagens/first_graph_detail.png" alt="" class="table-img">
+            <img src="imagens/first_graph.png" alt="" class="table-img">
             <img src="imagens/first_graph_mobile.png" alt="" class="graph-img-mobile">
           </div>
         </div>
-
-
         <div class="rentability-area">
-          <p class="graph-title">Rentabilidade Mês a Mês</p>
+          <p class="graph-title">Rentabilidade por Período</p>
           <div class="rentability-per-period">
-            <img src="imagens/rentability_month.png" alt="" class="table-img">
+            <img src="imagens/rentability_per_period.png" alt="" class="table-img">
             <div class="horizontal-scroll-wrapper">
-              <img src="imagens/rentability_month_mobile.png" alt="" class="table-img-mobile">
+              <img src="imagens/rentability_per_period_mobile.png" alt="" class="table-img-mobile">
             </div>
           </div>
         </div>
-
+        <div class="rentability-area">
+          <p class="graph-title">Risco</p>
+          <div class="rentability-per-period">
+            <img src="imagens/risk.png" alt="" class="table-img">
+            <div class="horizontal-scroll-wrapper">
+              <div>
+                <img src="imagens/risk_mobile.png" alt="" class="table-img-mobile">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="rentability-area">
           <p class="graph-title">Estatísticas</p>
           <div class="rentability-per-period">
-            <img src="imagens/statistics_detail.png" alt="" class="table-img">
+            <img src="imagens/statistics.png" alt="" class="table-img">
             <div class="horizontal-scroll-wrapper">
-              <img src="imagens/statistics_detail_mobile.png" alt="" class="table-img-mobile">
+              <img src="imagens/statistics_mobile.png" alt="" class="table-img-mobile">
             </div>
           </div>
         </div>
-
         <div class="graphs-grid-area">
+          <div class="grid-graph-area">
+            <p class="graph-title">Patrimônio Acumulado</p>
+            <div class="grid-graph">
+              <img src="imagens/acumulated.png" alt="" class="table-img">
+              <img src="imagens/acumulated_mobile.png" alt="" class="graph-img-mobile">
+            </div>
+          </div>
+          <div class="grid-graph-area">
+            <p class="graph-title">Volatilidade no Período</p>
+            <div class="grid-graph">
+              <img src="imagens/volatility_period.png" alt="" class="table-img">
+              <img src="imagens/volatility_period_mobile.png" alt="" class="graph-img-mobile">
+            </div>
+          </div>
           <div class="grid-graph-area">
             <p class="graph-title">Drawdown</p>
             <div class="grid-graph">
-              <img src="imagens/drawdown_detail.png" alt="" class="table-img">
-              <img src="imagens/drawdown_detail.png" alt="" class="graph-img-mobile">
+              <img src="imagens/drawdown.png" alt="" class="table-img">
+              <img src="imagens/drawdown_mobile.png" alt="" class="graph-img-mobile">
             </div>
           </div>
-
           <div class="grid-graph-area">
-            <p class="graph-title">Volatilidade</p>
+            <p class="graph-title">Relação Risco X Retorno</p>
             <div class="grid-graph">
-              <img src="imagens/volatility_detail.png" alt="" class="table-img">
-              <img src="imagens/volatility_detail.png" alt="" class="graph-img-mobile">
+              <img src="imagens/risk_return.png" alt="" class="table-img">
+              <img src="imagens/risk_return_mobile.png" alt="" class="graph-img-mobile">
             </div>
           </div>
-
-          <div class="grid-graph-area">
-            <p class="graph-title">Patrimônio x Valor Aplicado</p>
-            <div class="grid-graph">
-              <img src="imagens/applied_value_detail.png" alt="" class="table-img">
-              <img src="imagens/applied_value_detail.png" alt="" class="graph-img-mobile">
-            </div>
-          </div>
-
-          <div class="grid-graph-area">
-            <p class="graph-title">Dispersão de Rentabilidade</p>
-            <div class="grid-graph">
-              <img src="imagens/rentability_detail.png" alt="" class="table-img">
-              <img src="imagens/rentability_detail.png" alt="" class="graph-img-mobile">
-            </div>
+        </div>
+        <div class="rentability-area rentability-area-matrix">
+          <p class="graph-title">Matriz Correlação</p>
+          <div class="rentability-per-period">
+            <img src="imagens/correlation_matrix.png" alt="" class="table-img">
+            <img src="imagens/correlation_matrix_mobile.png" alt="" class="graph-img-mobile">
           </div>
         </div>
 
       </div>
     </div>
-
-
     <hr>
     <div class="final-box">
       <div class="send-email">

@@ -1,3 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+h1 {
+  font-size: 210%;
+  color: #5B8414;
+  font-family: 'Comfortaa', cursive;
+}
+a:hover {
+  color: #5B8414;
+  text-decoration: none;
+}
+
+/*----- Navigation Bar -----*/
+
+nav {
+  height: 70px;
+  text-align: right;
+  background: #F4F4F3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #222815;
+}
+nav a {
+  display: inline-block;
+  padding-top: 30px;
+  margin-right: 50px;
+  text-decoration: none;
+  text-align: right;
+  font-weight: 600;
+  color: #222815;
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
+}
+nav a:hover {
+  color: #5B8414;
+  text-decoration: none;
+}
+.img-logo-nav {
+  width: 160px;
+}
+#logo-nav {
+  float: left;
+  padding-top: 10px;
+  padding-left: 110px;
+}
+.group {
+  padding-right: 80px;
+}
+.dropdown {
+  display: none;
+}
+
+/*----- Container -----*/
+
+.simple-container {
+  align-content: center;
+}
+
+/*----- Home -----*/
+
+header h1{
+  color: #222815;
+  margin-bottom: 1%;
+  padding-top: 0;
+  padding-bottom: 2%;
+  line-height: normal;
+  font-size: 280%;
+  font-family: 'Comfortaa', cursive;
+}
+
+
 .locations {
   margin-top: 65px;
   padding-left: 70px;
@@ -42,7 +120,17 @@
 .search-bar-area {
   padding-bottom: 100px;
 }
-
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+  outline: none;
+}
 input.search-bar {
   border: 7px solid #667352;
   border-radius: 5px;
@@ -157,7 +245,7 @@ hr {
 .in {
   text-decoration: none;
   font-size: 25px;
-  margin: 2% 50% 2% 45%;
+  margin: 2% 46.1% 2% 46.1%;
   color: #222815;
 }
 .send-email p {
@@ -199,6 +287,7 @@ input.insert-email {
 .visit {
   background-color: #c9ddaa;
   margin: 5% 30%;
+  padding-top: 2%;
 }
 .visit p {
   text-align: center;
@@ -232,16 +321,48 @@ input.insert-email {
   font-size: 11px;
 }
 
+/*-----Contato-----*/
+
+.btn-enviar {
+  text-decoration: none;
+  background: #5B8414;
+  color: white;
+  margin-top: 3%;
+  padding: 1.5% 3%;
+  font-size: 120%;
+  font-weight: 600;
+  border-radius: 7px;
+  font-family: 'Muli', sans-serif;
+  float: right;
+}
+.btn-enviar:hover {
+  background-color: #4B6C10;
+  color: white;
+}
+.ok-btn {
+  background: #5B8414;
+  color: white;
+}
+.logo-mobile {
+  display: none;
+  max-width: 50%;
+}
+
 /* Media Queries
 -------------------------*/
 
 /*----- Ultrawide -----*/
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2400px) {
+  nav {
+    margin: 0 25%;
+  }
+  .simple-container {
+    margin: 0 25%;
+  }
   .banner {
     grid-template-columns: 20% 40% 40%;
   }
-
   .send-email-form-area {
     margin: 0;
   }
@@ -260,11 +381,14 @@ input.insert-email {
     margin-top: 5%;
   }
 
+  .visit {
+    padding-top: 2%;
+  }
+
 }
 
-/*----- Image for bigger then 1800px -----*/
+@media only screen and (min-width: 1800px) and (max-width: 2559px) {
 
-@media only screen and (min-width: 1800px) and (max-width: 2560px) {
   .search-img {
     grid-area: search-img;
     width: 45%;
@@ -274,7 +398,7 @@ input.insert-email {
   }
 }
 
-/*----- Image for bigger then 1600px -----*/
+/*----- Image for bigger than 1600px -----*/
 
 @media only screen and (min-width: 1600px) and (max-width: 1799px) {
   .search-img {
@@ -289,7 +413,40 @@ input.insert-email {
 /*----- Netbook -----*/
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-
+  nav {
+    height: 60px;
+  }
+  nav a {
+    padding-top: 25px;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  .img-logo-nav {
+    width: 130px;
+  }
+  #logo-nav {
+    float: left;
+    padding-top: 8px;
+    padding-left: 60px;
+  }
+  .group {
+    padding-right: 60px;
+  }
+  header h1 {
+    font-size: 200%;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  .footer a {
+    font-size: 200%;
+  }
+  .copyright {
+    font-size: 80%;
+  }
+  .simple-container {
+    width: 100%;
+  }
   .locations {
     margin-top: 60px;
     padding-left: 35px;
@@ -298,7 +455,6 @@ input.insert-email {
   .location-link {
     margin: 25px 35px;
   }
-
   .banner {
     grid-template-columns: 10% 50% 40%;
   }
@@ -309,7 +465,6 @@ input.insert-email {
     padding-left: 20%;
     margin-top: 10%;
   }
-
   .send-email-form-area {
     margin: 0;
   }
@@ -325,16 +480,46 @@ input.insert-email {
   .bottom-line p {
     margin-top: 0;
   }
-
   .visit {
     margin: 5% 25%;
+    padding-top: 2%;
+  }
+  .footer a {
+    font-size: 200%;
+  }
+  .copyright {
+    font-size: 80%;
   }
 }
 
 /*----- Tablet -----*/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    height: 60px;
+  }
+  nav a {
+    padding-top: 25px;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  .img-logo-nav {
+    width: 130px;
+  }
+  #logo-nav {
+    padding-top: 8px;
+    padding-left: 60px;
+  }
+  .group {
+    padding-right: 60px;
+  }
 
+  header h1 {
+    font-size: 200%;
+  }
+  h1 {
+    font-size: 150%;
+  }
   .locations {
     margin-top: 65px;
     padding-left: 40px;
@@ -401,6 +586,7 @@ input.insert-email {
   .visit {
     background-color: #c9ddaa;
     margin: 5% 25%;
+    padding-top: 0;
   }
   .visit p {
     text-align: center;
@@ -408,12 +594,109 @@ input.insert-email {
     font-size: 16px;
     margin-top: 35px;
   }
+  .footer a {
+    font-size: 150%;
+  }
+
+  .copyright {
+    font-size: 60%;
+  }
+}
+
+/*----- Devices bigger than smartphone -----*/
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .search-img-mobile {
+    display: block;
+    width: 140px;
+    margin: 0 43% !important;
+  }
+  .in {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 49%;
+    margin-right: 48%;
+  }
 }
 
 /*----- Smartphones -----*/
 
 @media only screen and (max-width: 767px) {
-
+  nav {
+    height: 50px;
+  }
+  nav a {
+    margin-right: 0;
+  }
+  .img-logo-nav {
+    width: 110px;
+  }
+  #logo-nav {
+    padding-top: 8px;
+    padding-left: 30px;
+  }
+  .group {
+    display: none;
+  }
+  .dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  .dropdown-content a {
+    color: black;
+    font-size: 12px;
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd
+  }
+  .show {
+    display:block;
+  }
+  h1 {
+    font-size: 90%;
+  }
+  header h1 {
+    font-size: 110%;
+    line-height: 125%;
+    margin-top: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 150%;
+  }
+  header h2 {
+    font-size: 70%;
+    line-height: 25px;
+  }
+  label {
+    font-size: 75%;
+  }
+  input[type=text], select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 14px;
+    resize: vertical;
+  }
   .locations {
     margin-top: 60px;
     padding-left: 20px;
@@ -428,11 +711,12 @@ input.insert-email {
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-areas: ". search-bar-area .";
+    padding-top: 4%;
   }
   .search-img-mobile {
     display: block;
     width: 140px;
-    margin: 0 35%;
+    margin: 0 34%;
   }
   .search-img {
     display: none;
@@ -447,13 +731,15 @@ input.insert-email {
     font-size: 12px;
   }
   .search-bar-area button {
-    margin-top: 16px;
+    margin-top: 0px;
     margin-right: 10px;
   }
   .search-icon {
     font-size: 18px;
   }
-
+  .banner-graph hr {
+    display: none;
+  }
   .content-comp {
     margin: 5% 10% 6% 10%;
   }
@@ -531,6 +817,20 @@ input.insert-email {
   .in {
     font-size: 28px;
     text-align: center;
+  }
+  .logo-contact {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+    width: 40%;
+    margin: 8% 30%;
+  }
+  .footer a {
+    font-size: 150%;
+  }
+  .copyright p {
+    font-size: 50%;
   }
   .footer-comparative {
     display: grid;

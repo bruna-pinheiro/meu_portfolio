@@ -2,7 +2,6 @@
   padding-top: 3%;
   margin: 0 10%;
 }
-
 .btn-back-to-graphs {
   text-decoration: none;
   background-color: #5F871A;
@@ -11,6 +10,7 @@
   font-size: 17px;
   color: white;
   font-family: 'Muli', sans-serif;
+  cursor: pointer;
 }
 .btn-back-to-graphs:hover {
   color: white;
@@ -36,20 +36,72 @@
 
 
 .ano[_ngcontent-c41] {
-    border-right: 1px solid #3e8400;
-    background-color: #fff;
-    vertical-align: middle;
+  border-right: 1px solid #3e8400;
+  background-color: #fff;
+  vertical-align: middle;
 }
 .fundo[_ngcontent-c41] {
-    margin: 0;
-    padding: 3px;
-    text-align: left;
-    font-weight: 400;
+  margin: 0 0 0 5%;
+  padding: 3px;
+  text-align: left;
+  font-weight: 400;
 }
 .fund-name {
   padding-left: 8px;
 }
+.first-fund {
+  margin-top: 8px;
+}
+.fund-id {
+  margin-bottom: 5px;
+}
 .nomeFundos {
-  font-size: 10px !important;
+  font-size: 14px !important;
+}
+
+/*----- Tablet -----*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 12px;
+  }
+  .row {
+    margin-right: -26px;
+    margin-left: -26px;
+  }
+  .fund-title {
+    font-size: 18px;
+    margin: 3px 10%;
+  }
+}
+
+
+/*----- Smartphones -----*/
+
+@media only screen and (max-width: 767px) {
+  .banner-detail-area {
+    padding-top: 6%;
+    margin: 0 10%;
+  }
+  .banner-graph hr {
+    display: block;
+    margin-top: 10%;
+  }
+  
+  .row {
+    margin-right: -28px;
+    margin-left: -28px;
+  }
+  body {
+    font-size: 12px;
+  }
+  .fund-title {
+    font-size: 14px;
+    margin: 3px 10%;
+  }
+  .fund-detail-area {
+    margin: 1% 4%;
+    border-radius: 2px;
+  }
 }
 
