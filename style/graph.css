@@ -10,7 +10,9 @@
   padding-bottom: 0;
   height: 200px;
 }
-
+.content-space {
+  vertical-align: middle !important;
+}
 .funds-area {
   margin: 0 10%;
 }
@@ -69,7 +71,6 @@
   border: 2px solid grey;
   margin: 0 1% 1% 1%;
 }
-
 .rentability-area {
   padding-top: 1%;
   margin: 2% 5%;
@@ -80,8 +81,9 @@
   border: 2px solid grey;
   margin: 0 1% 1% 1%;
 }
-.fund-abreviation {
-  margin-left: 0;
+.resize-fund-space {
+  padding-left: 0;
+  padding-right: 0;
 }
 .color-item-tabela {
   margin: 0 0 0 20px;
@@ -89,7 +91,20 @@
   width: 8px;
   float: left;
 }
-
+.width-fund {
+  width: 150px;
+  min-width: 150px;
+}
+.width-fund-stack {
+  width: 150px;
+  min-width: 150px;
+}
+.width-chart {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
+}
 .graphs-grid-area {
   display: grid;
   grid-template-columns: 49% 49%;
@@ -129,7 +144,7 @@
   .graphs-grid-area {
     grid-template-columns: 49% 49%;
     grid-column-gap: 2%;
-  }
+  }  
 }
 
 /*----- Tablet -----*/

@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Muli:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="style/comparative.css">
   <link rel="stylesheet" href="style/graph.css">
+  <link rel="stylesheet" href="style/fund-detail.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -113,70 +114,236 @@
         <div class="rentability-area">
           <p class="graph-title">Rentabilidade por Período</p>
           <div class="rentability-per-period">
-            <img src="imagens/rentability_per_period.png" alt="" class="table-img">
-            <div class="horizontal-scroll-wrapper">
-              <img src="imagens/rentability_per_period_mobile.png" alt="" class="table-img-mobile">
+            <div _ngcontent-c24="" class="width-chart">
+              <div _ngcontent-c24="" class="table-responsive">
+                <table _ngcontent-c24="" class="table">
+                  <thead _ngcontent-c24="">
+                    <tr _ngcontent-c24="">
+                      <th _ngcontent-c24="" class="content-space width-fund" scope="col">Fundos</th>
+                      <th _ngcontent-c24="" class="content-space" scope="col">No Mês</th>
+                      <th _ngcontent-c24="" class="content-space" scope="col">No Ano</th>
+                      <th _ngcontent-c24="" class="content-space" scope="col">3 Meses</th>
+                      <th _ngcontent-c24="" class="content-space" scope="col">6 Meses</th>
+                      <th _ngcontent-c24="" class="content-space" scope="col">12 Meses</th>
+                      <th _ngcontent-c24="" class="content-space" scope="col">24 Meses</th>
+                      <th _ngcontent-c24="" class="content-space" scope="col">36 Meses</th>
+                    </tr>
+                  </thead>
+                  <tbody _ngcontent-c24="">
+                    <tr _ngcontent-c24="">
+                      <td _ngcontent-c24="" class="content-space width-fund">
+                        <span _ngcontent-c24="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(152, 251, 152);"></span>
+                        <span class="fund-abreviation">FIDUC FIA</span>
+                      </td>
+                      <td _ngcontent-c24="" class="content-space">-0,25%</td>
+                      <td _ngcontent-c24="" class="content-space">6,79%</td>
+                      <td _ngcontent-c24="" class="content-space">-2,04%</td>
+                      <td _ngcontent-c24="" class="content-space">10,57%</td>
+                      <td _ngcontent-c24="" class="content-space">10,21%</td>
+                      <td _ngcontent-c24="" class="content-space">-</td>
+                      <td _ngcontent-c24="" class="content-space">-</td>
+                    </tr>
+                    <tr _ngcontent-c24="">
+                      <td _ngcontent-c24="" class="content-space width-fund">
+                        <span _ngcontent-c24="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(0, 255, 255);"></span>
+                        <span class="fund-abreviation">FIDUC FIC</span>
+                      </td>
+                      <td _ngcontent-c24="" class="content-space">0,27%</td>
+                      <td _ngcontent-c24="" class="content-space">1,46%</td>
+                      <td _ngcontent-c24="" class="content-space">-1,13%</td>
+                      <td _ngcontent-c24="" class="content-space">2,26%</td>
+                      <td _ngcontent-c24="" class="content-space">3,85%</td>
+                      <td _ngcontent-c24="" class="content-space">-</td>
+                      <td _ngcontent-c24="" class="content-space">-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
         <div class="rentability-area">
           <p class="graph-title">Risco</p>
           <div class="rentability-per-period">
-            <img src="imagens/risk.png" alt="" class="table-img">
-            <div class="horizontal-scroll-wrapper">
-              <div>
-                <img src="imagens/risk_mobile.png" alt="" class="table-img-mobile">
+            <div _ngcontent-c25="" class="width-chart">
+              <div _ngcontent-c25="" class="table-responsive">
+                <table _ngcontent-c25="" class="table">
+                  <thead _ngcontent-c25="">
+                    <tr _ngcontent-c25="">
+                      <th _ngcontent-c25="" class="content-space width-fund" scope="col">Fundos</th>
+                      <th _ngcontent-c25="" class="content-space" scope="col">Volatilidade Início</th>
+                      <th _ngcontent-c25="" class="content-space" scope="col">Volatilidade 12 Meses</th>
+                      <th _ngcontent-c25="" class="content-space" scope="col">Sharpe Início</th>
+                      <th _ngcontent-c25="" class="content-space" scope="col">Sharpe 12 Meses</th>
+                      <th _ngcontent-c25="" class="content-space" scope="col">Máximo Drawdown</th>
+                    </tr>
+                  </thead>
+                  <tbody _ngcontent-c25="">
+                    <tr _ngcontent-c25="">
+                      <td _ngcontent-c25="" class="content-space width-fund">
+                        <span _ngcontent-c25="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(152, 251, 152);"></span>
+                        <span class="fund-abreviation">FIDUC FIA</span>
+                      </td>
+                      <td _ngcontent-c25="" class="content-space">16,87%</td>
+                      <td _ngcontent-c25="" class="content-space">17,63%</td>
+                      <td _ngcontent-c25="" class="content-space">5,61</td>
+                      <td _ngcontent-c25="" class="content-space">5,69</td>
+                      <td _ngcontent-c25="" class="content-space">16,64%</td>
+                    </tr>
+                    <tr _ngcontent-c25="">
+                      <td _ngcontent-c25="" class="content-space width-fund">
+                        <span _ngcontent-c25="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(0, 255, 255);"></span>
+                        <span class="fund-abreviation">FIDUC FIC</span>
+                      </td>
+                      <td _ngcontent-c25="" class="content-space">3,05%</td>
+                      <td _ngcontent-c25="" class="content-space">3,14%</td>
+                      <td _ngcontent-c25="" class="content-space">30,28</td>
+                      <td _ngcontent-c25="" class="content-space">30,00</td>
+                      <td _ngcontent-c25="" class="content-space">1,95%</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
-        <div class="rentability-area">
-          <p class="graph-title">Estatísticas</p>
-          <div class="rentability-per-period">
-            <img src="imagens/statistics.png" alt="" class="table-img">
-            <div class="horizontal-scroll-wrapper">
-              <img src="imagens/statistics_mobile.png" alt="" class="table-img-mobile">
+          <div class="rentability-area">
+            <p class="graph-title">Estatísticas</p>
+            <div class="rentability-per-period">
+              <div _ngcontent-c26="" class="width-chart">
+                <div _ngcontent-c26="" class="table-responsive">
+                  <table _ngcontent-c26="" class="table">
+                    <thead _ngcontent-c26="">
+                      <tr _ngcontent-c26="">
+                        <th _ngcontent-c26="" class="content-space" scope="col">Fundos</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">Meses Positivos</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">Meses Negativos</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">Maior Retorno</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">Menor Retorno</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">Acima do CDI</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">Abaixo do CDI</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">PL Atual</th>
+                        <th _ngcontent-c26="" class="content-space" scope="col">Qtde Cotistas</th>
+                      </tr>
+                    </thead>
+                    <tbody _ngcontent-c26="">
+                      <tr _ngcontent-c26="">
+                        <td _ngcontent-c26="" class="content-space width-fund-stack">
+                          <span _ngcontent-c26="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(152, 251, 152);"></span>
+                          <span class="fund-abreviation">FIDUC FIA</span>
+                        </td>
+                        <td _ngcontent-c26="" class="content-space">6</td>
+                        <td _ngcontent-c26="" class="content-space">9</td>
+                        <td _ngcontent-c26="" class="content-space">9,02%</td>
+                        <td _ngcontent-c26="" class="content-space">-8,90%</td>
+                        <td _ngcontent-c26="" class="content-space">5</td>
+                        <td _ngcontent-c26="" class="content-space">10</td>
+                        <td _ngcontent-c26="" class="content-space">R$&nbsp;8.824.531,21</td>
+                        <td _ngcontent-c26="" class="content-space">162</td>
+                      </tr>
+                      <tr _ngcontent-c26="">
+                        <td _ngcontent-c26="" class="content-space width-fund-stack">
+                          <span _ngcontent-c26="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(0, 255, 255);"></span>
+                          <span class="fund-abreviation">FIDUC FIC</span>
+                        </td>
+                        <td _ngcontent-c26="" class="content-space">12</td>
+                        <td _ngcontent-c26="" class="content-space">3</td>
+                        <td _ngcontent-c26="" class="content-space">2,62%</td>
+                        <td _ngcontent-c26="" class="content-space">-0,95%</td>
+                        <td _ngcontent-c26="" class="content-space">6</td>
+                        <td _ngcontent-c26="" class="content-space">9</td>
+                        <td _ngcontent-c26="" class="content-space">R$&nbsp;14.415.880,59</td>
+                        <td _ngcontent-c26="" class="content-space">193</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="graphs-grid-area">
+            <div class="grid-graph-area">
+              <p class="graph-title">Patrimônio Acumulado</p>
+              <div class="grid-graph">
+                <img src="imagens/acumulated.png" alt="" class="table-img">
+                <img src="imagens/acumulated_mobile.png" alt="" class="graph-img-mobile">
+              </div>
+            </div>
+            <div class="grid-graph-area">
+              <p class="graph-title">Volatilidade no Período</p>
+              <div class="grid-graph">
+                <img src="imagens/volatility_period.png" alt="" class="table-img">
+                <img src="imagens/volatility_period_mobile.png" alt="" class="graph-img-mobile">
+              </div>
+            </div>
+            <div class="grid-graph-area">
+              <p class="graph-title">Drawdown</p>
+              <div class="grid-graph">
+                <img src="imagens/drawdown.png" alt="" class="table-img">
+                <img src="imagens/drawdown_mobile.png" alt="" class="graph-img-mobile">
+              </div>
+            </div>
+            <div class="grid-graph-area">
+              <p class="graph-title">Relação Risco X Retorno</p>
+              <div class="grid-graph">
+                <img src="imagens/risk_return.png" alt="" class="table-img">
+                <img src="imagens/risk_return_mobile.png" alt="" class="graph-img-mobile">
+              </div>
+            </div>
+          </div>
+          <div class="rentability-area rentability-area-matrix">
+            <p class="graph-title">Matriz Correlação</p>
+            <div class="rentability-per-period">
+              <div _ngcontent-c22="" class="width-chart">
+                <div _ngcontent-c22="" class="table-responsive">
+                  <table _ngcontent-c22="" class="table">
+                    <thead _ngcontent-c22="">
+                      <tr _ngcontent-c22="">
+                        <th _ngcontent-c22="" class="text-center" scope="col">&nbsp;</th>
+                        <th _ngcontent-c22="" class="text-center" scope="col">&nbsp;</th>
+                        <th _ngcontent-c22="" class="text-center" scope="col">
+                          <span _ngcontent-c22="" class="col color-fundo-escolhido-tabela" style="background-color: rgb(50, 82, 110);"></span>
+                        </th>
+                        <th _ngcontent-c22="" class="text-center" scope="col">
+                          <span _ngcontent-c22="" class="col color-fundo-escolhido-tabela" style="background-color: rgb(152, 251, 152);"></span>
+                        </th>
+                        <th _ngcontent-c22="" class="text-center" scope="col">
+                          <span _ngcontent-c22="" class="col color-fundo-escolhido-tabela" style="background-color: rgb(0, 255, 255);"></span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody _ngcontent-c22="">
+                      <tr _ngcontent-c22="">
+                        <td _ngcontent-c22="" class="text-center">
+                          <span _ngcontent-c22="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(50, 82, 110);"></span>
+                        </td>
+                        <td _ngcontent-c22="" class="text-left">CDI</td>
+                        <td _ngcontent-c22="" class="text-center celulaCorrelata"> 1,00</td>
+                      </tr>
+                      <tr _ngcontent-c22="">
+                        <td _ngcontent-c22="" class="text-center">
+                          <span _ngcontent-c22="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(152, 251, 152);"></span>
+                        </td>
+                        <td _ngcontent-c22="" class="text-left">FIDUC FUNDO DE INVESTIMENTO EM AÇÕES</td>
+                        <td _ngcontent-c22="" class="text-center celulaCorrelata"> -0,01</td>
+                        <td _ngcontent-c22="" class="text-center celulaCorrelata"> 1,00</td>
+                      </tr>
+                      <tr _ngcontent-c22="">
+                        <td _ngcontent-c22="" class="text-center">
+                          <span _ngcontent-c22="" class="col-6 color-item-tabela" id="fundo-color" style="background-color: rgb(0, 255, 255);"></span>
+                        </td>
+                        <td _ngcontent-c22="" class="text-left">FIDUC FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO MULTIMERCADO CREDITO PRIVADO</td>
+                        <td _ngcontent-c22="" class="text-center celulaCorrelata"> 0,05</td>
+                        <td _ngcontent-c22="" class="text-center celulaCorrelata"> 0,66</td>
+                        <td _ngcontent-c22="" class="text-center celulaCorrelata"> 1,00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="graphs-grid-area">
-          <div class="grid-graph-area">
-            <p class="graph-title">Patrimônio Acumulado</p>
-            <div class="grid-graph">
-              <img src="imagens/acumulated.png" alt="" class="table-img">
-              <img src="imagens/acumulated_mobile.png" alt="" class="graph-img-mobile">
-            </div>
-          </div>
-          <div class="grid-graph-area">
-            <p class="graph-title">Volatilidade no Período</p>
-            <div class="grid-graph">
-              <img src="imagens/volatility_period.png" alt="" class="table-img">
-              <img src="imagens/volatility_period_mobile.png" alt="" class="graph-img-mobile">
-            </div>
-          </div>
-          <div class="grid-graph-area">
-            <p class="graph-title">Drawdown</p>
-            <div class="grid-graph">
-              <img src="imagens/drawdown.png" alt="" class="table-img">
-              <img src="imagens/drawdown_mobile.png" alt="" class="graph-img-mobile">
-            </div>
-          </div>
-          <div class="grid-graph-area">
-            <p class="graph-title">Relação Risco X Retorno</p>
-            <div class="grid-graph">
-              <img src="imagens/risk_return.png" alt="" class="table-img">
-              <img src="imagens/risk_return_mobile.png" alt="" class="graph-img-mobile">
-            </div>
-          </div>
-        </div>
-        <div class="rentability-area rentability-area-matrix">
-          <p class="graph-title">Matriz Correlação</p>
-          <div class="rentability-per-period">
-            <img src="imagens/correlation_matrix.png" alt="" class="table-img">
-            <img src="imagens/correlation_matrix_mobile.png" alt="" class="graph-img-mobile">
-          </div>
-        </div>
-
       </div>
     </div>
     <hr>

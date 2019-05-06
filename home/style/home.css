@@ -176,7 +176,7 @@ header h1{
 }
 .list {
   display: grid;
-  grid-template-columns: 18% 78%;
+  grid-template-columns: 20% 80%;
 }
 
 /*-----Contato-----*/
@@ -315,12 +315,14 @@ input[type=text], select, textarea {
   .simple-container {
     margin: 0 25%;
   }
-  .benefits {
-    padding-top: 2%;
-    padding-bottom: 2.5%;
+  header h1 {
+    font-size: 300%;
   }
-  .benefits2 p {
-    margin-left: 2%;
+  .subtitle {
+    font-size: 150%;
+  }
+  .btn-conheca {
+    font-size: 90%;
   }
 }
 
